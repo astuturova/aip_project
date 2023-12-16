@@ -10,7 +10,7 @@ class TestMyClient(unittest.TestCase):
         mock_post.return_value.status_code = 200
         headers = {"accept": "application/json"}
         response = requests.get(
-            url=f"https://api.tomorrow.io/v4/weather/forecast?location=RU-MOW&timesteps=1d&apikey=gUV9cyqDoLGF5p6Y8VjSb0CqmdGTYEVs",
+            url=f"https://api.tomorrow.io/v4/weather/forecast?location=RU-MOW&timesteps=1d&apikey=1cE6v5BNFWnfPXBHicHZTuv9H7qENWxt",
             headers=headers)
         self.assertEqual(response.status_code, 200)
 
@@ -19,6 +19,6 @@ class TestMyClient(unittest.TestCase):
         mock_post.return_value.status_code = 400
         headers = {"accept": "application/json"}
         response = requests.get(
-            url=f"https://api.tomorrow.io/v4/weather/forecast?location=&timesteps=1d&apikey=gUV9cyqDoLGF5p6Y8VjSb0CqmdGTYEVs",
+            url=f"https://api.tomorrow.io/v4/weather/forecast?location=&timesteps=1d&apikey=1cE6v5BNFWnfPXBHicHZTuv9H7qENWxt",
             headers=headers)
         self.assertEqual(response.status_code, 400)

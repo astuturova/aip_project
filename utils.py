@@ -58,7 +58,7 @@ class ForecastService:
         requests.RequestException: Если получен некорректный response
 
     """
-        url = f"https://api.tomorrow.io/v4/weather/forecast?location={name}&timesteps=1d&apikey=gUV9cyqDoLGF5p6Y8VjSb0CqmdGTYEVs"
+        url = f"https://api.tomorrow.io/v4/weather/forecast?location={name}&timesteps=1d&apikey=1cE6v5BNFWnfPXBHicHZTuv9H7qENWxt"
 
         headers = {"accept": "application/json"}
 
@@ -117,7 +117,7 @@ class ForecastService:
         requests.RequestException: Если получен некорректный response
 
         """
-        url = f"https://api.tomorrow.io/v4/weather/forecast?location={name}&timesteps=1d&apikey=GpZe9ZkYHUc34zdWZJ8r0GffrepVdW7B"
+        url = f"https://api.tomorrow.io/v4/weather/forecast?location={name}&timesteps=1d&apikey=1cE6v5BNFWnfPXBHicHZTuv9H7qENWxt"
 
         headers = {"accept": "application/json"}
 
